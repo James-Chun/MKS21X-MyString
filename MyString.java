@@ -19,19 +19,27 @@ public class MyString implements CharSequence,Comparable<CharSequence>{
     return s+"]";
   }
 
-  public char charAt(int index){
-    return Character();//Turn String substring into char
-  }
-  //THIS IS A STRING LMAOOAOAOAAOOA
-  //String substring
-  public CharSequence subSequence(int start, int end){
-    String s = "";
-    for (int i=0;i<end;i++){
-      s=s+charAt[i];
+  public CharSequence subSequence(int start,int end){
+    String newSequence = "";
+    for (int i=start;i<end;i++){
+      newSequence=newSequence+data[i];
     }
-    return s;
+    return newSequence;
   }
 
+  public char charAt(int index){
+    return data[index];
+  }
+
+  public int length(){
+    return data.length;
+  }
+
+  public boolean compareTo(MyString s){
+    if (
+    for (int i=0;i<)
+    return true;
+  }
 
   public static void main(String[] args){
     System.out.println('a');
